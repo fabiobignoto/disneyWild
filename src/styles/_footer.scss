@@ -1,0 +1,58 @@
+@use 'variaveis';
+
+.footer {
+    padding-top: 56px;
+    display: grid;
+    text-align: center;
+    background-color: #0e0b14;
+    color: variaveis.$corPrincipal;
+    font-size: 13px;
+
+    &__logo{
+        max-width: 100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__list{
+        width: 45%;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (max-width:767px) {
+            width: 75%;
+        }
+
+        
+    &__item {
+        cursor: pointer;
+        color: variaveis.$corPrincipal;
+        white-space: nowrap;
+
+        margin: 11px 5px 10px;
+
+        &:hover{
+            color: variaveis.$corSecundaria;
+        }
+    }
+
+    }
+
+    &__message,
+    &__disney-rights {
+        margin: 11px auto 0;
+        width: 45%;
+        color: variaveis.$corSecundaria;
+
+        @media (max-width:767px) {
+            width: 75%;
+        }
+    }
+
+    &__disney-rights {
+        padding-bottom: 20px;
+
+    }
+}
