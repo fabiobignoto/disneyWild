@@ -24,6 +24,16 @@
             display: flex;
             align-items: center;
 
+            @media (max-width: 620px){
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            @media (max-width: 420px){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+            }
 
 
             &__item {
@@ -37,7 +47,7 @@
 
                 text-transform: uppercase;
 
-                @media (max-width: 1000px){
+                @media (max-width: 1270px){
                     span{
                         border-bottom: 2px solid transparent;
                         display: none;
@@ -103,6 +113,12 @@
             align-items: center;
             justify-content: end;
             margin-right: 20px;
+
+            &__name{
+                @media (max-width: 480px) {
+                    display: none;
+                }
+            }
             img{
                 margin-left: 20px;
             }
