@@ -58,7 +58,7 @@
 }
 
 .suggestions {
-    padding-bottom: 120px;
+    padding-bottom: 20px;
 
     &__carousel__image {
     max-width: 900px;
@@ -86,7 +86,7 @@
 
     &__item{
         width: fit-content;
-        padding-bottom: 120px;
+        padding-bottom: 20px;
 
         &:hover{
             .extras__item{
