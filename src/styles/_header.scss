@@ -142,7 +142,13 @@
             .header__profiles__dropDown {
                 display: block;
             }
-        }
+            @media (max-width: 480px) {
+                .header__profiles__profile__name{
+                    display: block;
+                }
+            }                
+            }
+            
 
         &__profile{
             display: flex;
