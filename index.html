@@ -1,123 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Disney Plus</title>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
     <link rel="stylesheet" href="./dist/styles/main.css">
 
 </head>
+
 <body>
-    
+
     <header class="header">
         <nav class="header__navigation">
-            <a href="#"><img class="header__navigation__logo" src="./dist/images/Logo/disneyplus.svg" alt="Disney Plus"></a>
+            <a href="#"><img class="header__navigation__logo" src="./dist/images/Logo/disneyplus.svg"
+                    alt="Disney Plus"></a>
             <ul class="header__navigation__list">
                 <li class="header__navigation__list__item"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
-                    </svg>
-                    <span>Início</span>
-                </a></li>
-                <li class="header__navigation__list__item"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-                    <span>Pesquisa</span>
-                </a></li>
-                <li class="header__navigation__list__item"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                    </svg>
-                    <span>Minha Lista</span>
-                </a></li>
-                <li class="header__navigation__list__item"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                    </svg>
-                    <span> Originais</span>
-                </a></li>
-                <li class="header__navigation__list__item"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
-                        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
-                    </svg>
-                    <span> Filmes</span>
-                </a></li>
-                <li class="header__navigation__list__item"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv-fill" viewBox="0 0 16 16">
-                        <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM2 2h12s2 0 2 2v6s0 2-2 2H2s-2 0-2-2V4s0-2 2-2z"/>
-                    </svg>
-                    <span>Séries</span>
-                </a></li>
-            </ul>
-            
-            <div class="header__navigation__more">
-                <ul>
-                    <li class="header__navigation__more__svg">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                        </svg>
-                    </li>
-                    <li class="header__navigation__more__item"><a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
                         </svg>
                         <span>Início</span>
                     </a></li>
-                    <li class="header__navigation__more__item"><a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                <li class="header__navigation__list__item"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                         </svg>
                         <span>Pesquisa</span>
                     </a></li>
-                    <li class="header__navigation__more__item"><a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                <li class="header__navigation__list__item"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                         </svg>
                         <span>Minha Lista</span>
                     </a></li>
-                    <li class="header__navigation__more__item"><a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                <li class="header__navigation__list__item"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                         </svg>
                         <span> Originais</span>
                     </a></li>
-                    <li class="header__navigation__more__item"><a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
-                            <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
+                <li class="header__navigation__list__item"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-film" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
                         </svg>
                         <span> Filmes</span>
                     </a></li>
-                    <li class="header__navigation__more__item"><a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv-fill" viewBox="0 0 16 16">
-                            <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM2 2h12s2 0 2 2v6s0 2-2 2H2s-2 0-2-2V4s0-2 2-2z"/>
+                <li class="header__navigation__list__item"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-tv-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM2 2h12s2 0 2 2v6s0 2-2 2H2s-2 0-2-2V4s0-2 2-2z" />
                         </svg>
                         <span>Séries</span>
                     </a></li>
+            </ul>
+
+            <div class="header__navigation__more">
+                <ul>
+                    <li class="header__navigation__more__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                        </svg>
+                    </li>
+                    <li class="header__navigation__more__item"><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+                            </svg>
+                            <span>Início</span>
+                        </a></li>
+                    <li class="header__navigation__more__item"><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                            <span>Pesquisa</span>
+                        </a></li>
+                    <li class="header__navigation__more__item"><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                            </svg>
+                            <span>Minha Lista</span>
+                        </a></li>
+                    <li class="header__navigation__more__item"><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <span> Originais</span>
+                        </a></li>
+                    <li class="header__navigation__more__item"><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-film" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
+                            </svg>
+                            <span> Filmes</span>
+                        </a></li>
+                    <li class="header__navigation__more__item"><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-tv-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM2 2h12s2 0 2 2v6s0 2-2 2H2s-2 0-2-2V4s0-2 2-2z" />
+                            </svg>
+                            <span>Séries</span>
+                        </a></li>
                 </ul>
-                </div>
+            </div>
         </nav>
 
         <nav class="header__profiles">
             <div class="header__profiles__profile">
                 <p class="header__profiles__profile__name">Fabio</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                 </svg>
             </div>
-            
+
             <ul class="header__profiles__dropDown">
                 <li><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
-                    </svg>
-                    <span>Adicionar perfil</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                        </svg>
+                        <span>Adicionar perfil</span>
 
-                </a></li>
+                    </a></li>
                 <li><a href="#">Editar Perfis</a></li>
                 <li><a href="#">Configurações do Aplicativo</a></li>
                 <li><a href="#">Conta</a></li>
@@ -125,170 +158,199 @@
                 <li><a href="#">Sair</a></li>
             </ul>
         </nav>
-    </header> 
-    
+    </header>
+
     <div class="background">
         <img class="background__image" src="./dist/images/wildlife/wildlife_image.jpg" alt="Documentário Wild Life">
-        <div class="background__mask"></div>
+
     </div>
 
     <main>
-        
-            <div class="article">
-                <div class="article__section">    
-                    
-                    <img class="article__section__image" src="./dist/images/wildlife/WILD-Life title.png" alt="Wild Life National Geographic Channel">
-        
-                    <img class="article__section__tag" src="./dist/images/tag-12.png" alt="Não recomendado para menores de 12 anos">
-                    <p class="article__section__time">2023 • 1h 32min</p>
-                    <p class="article__section__style">Documentário</p>
-                
 
-                    <div class="article__section__controls">
-                        <button class="article__section__controls__play" type="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                            </svg>
-                            <span>Assistir</span>
-                        </button>
-                        
-                        <button class="article__section__controls__trailer" type="button">
-                            <span>Trailer</span>
-                        </button>
-                        
-                        <button type="button" class="article__section__controls__add-list">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                            </svg>
-                        </button>
-                        
-                        <button type="button" class="article__section__controls__group-play">
-                            <svg alt="" width="16" height="16" fill="currentColor" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 23.465 19.672 C 23.496 19.83 23.97 24.967 23.798 25.96 C 23.55 27.399 21.837 28.426 18.168 28.426 C 14.634 28.426 12.829 27.189 12.483 25.715 C 12.152 24.314 12.807 19.581 12.839 19.427 C 13.638 15.502 16.851 15.295 17.961 15.287 L 18.306 15.287 C 19.343 15.287 22.646 15.664 23.465 19.672 Z M 10.313 16.315 C 10.639 16.315 11.213 16.332 11.831 16.545 C 11.416 17.263 11.105 18.086 10.915 19.016 C 10.906 19.061 10.111 24.229 10.571 26.186 C 10.574 26.198 10.582 26.206 10.585 26.218 C 10.298 26.195 10 26.152 9.689 26.073 C 6.928 25.381 5.88 24.015 5.843 23.261 C 5.787 22.101 6.11 19.77 6.136 19.645 C 6.792 16.42 9.255 16.315 10.089 16.315 Z M 25.976 16.315 C 26.863 16.321 29.223 16.498 29.864 19.645 C 29.89 19.77 30.214 22.101 30.157 23.261 C 30.122 24.015 29.073 25.381 26.312 26.074 C 26.119 26.121 25.932 26.158 25.749 26.184 C 25.945 24.628 25.427 19.459 25.387 19.262 C 25.166 18.176 24.788 17.262 24.305 16.501 C 24.87 16.331 25.386 16.315 25.688 16.315 L 25.688 16.315 Z M 25.77 10.111 C 27.203 10.111 28.366 11.301 28.366 12.77 C 28.366 14.238 27.203 15.429 25.77 15.429 C 24.336 15.429 23.171 14.238 23.171 12.77 C 23.171 11.301 24.336 10.111 25.77 10.111 Z M 10.231 10.111 C 11.666 10.111 12.829 11.301 12.829 12.77 C 12.829 14.238 11.666 15.429 10.231 15.429 C 8.798 15.429 7.636 14.238 7.636 12.77 C 7.636 11.301 8.798 10.111 10.231 10.111 Z M 18.207 7.574 C 19.99 7.574 21.436 9.053 21.436 10.878 C 21.436 12.704 19.99 14.184 18.207 14.184 C 16.422 14.184 14.976 12.704 14.976 10.878 C 14.976 9.053 16.422 7.574 18.207 7.574 Z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    
+        <div class="article">
+
+            <div class="article__section">
+
+                <img class="article__section__image" src="./dist/images/wildlife/WILD-Life title.png"
+                    alt="Wild Life National Geographic Channel">
+
+                <img class="article__section__tag" src="./dist/images/tag-12.png"
+                    alt="Não recomendado para menores de 12 anos">
+                <p class="article__section__time">2023 • 1h 32min</p>
+                <p class="article__section__style">Documentário</p>
+
+
+                <div class="article__section__controls">
+                    <button class="article__section__controls__play" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                        </svg>
+                        <span>Assistir</span>
+                    </button>
+
+                    <button class="article__section__controls__trailer" type="button">
+                        <span>Trailer</span>
+                    </button>
+
+                    <button type="button" class="article__section__controls__add-list">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                        </svg>
+                    </button>
+
+                    <button type="button" class="article__section__controls__group-play">
+                        <svg alt="" width="16" height="16" fill="currentColor" viewBox="0 0 36 36"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M 23.465 19.672 C 23.496 19.83 23.97 24.967 23.798 25.96 C 23.55 27.399 21.837 28.426 18.168 28.426 C 14.634 28.426 12.829 27.189 12.483 25.715 C 12.152 24.314 12.807 19.581 12.839 19.427 C 13.638 15.502 16.851 15.295 17.961 15.287 L 18.306 15.287 C 19.343 15.287 22.646 15.664 23.465 19.672 Z M 10.313 16.315 C 10.639 16.315 11.213 16.332 11.831 16.545 C 11.416 17.263 11.105 18.086 10.915 19.016 C 10.906 19.061 10.111 24.229 10.571 26.186 C 10.574 26.198 10.582 26.206 10.585 26.218 C 10.298 26.195 10 26.152 9.689 26.073 C 6.928 25.381 5.88 24.015 5.843 23.261 C 5.787 22.101 6.11 19.77 6.136 19.645 C 6.792 16.42 9.255 16.315 10.089 16.315 Z M 25.976 16.315 C 26.863 16.321 29.223 16.498 29.864 19.645 C 29.89 19.77 30.214 22.101 30.157 23.261 C 30.122 24.015 29.073 25.381 26.312 26.074 C 26.119 26.121 25.932 26.158 25.749 26.184 C 25.945 24.628 25.427 19.459 25.387 19.262 C 25.166 18.176 24.788 17.262 24.305 16.501 C 24.87 16.331 25.386 16.315 25.688 16.315 L 25.688 16.315 Z M 25.77 10.111 C 27.203 10.111 28.366 11.301 28.366 12.77 C 28.366 14.238 27.203 15.429 25.77 15.429 C 24.336 15.429 23.171 14.238 23.171 12.77 C 23.171 11.301 24.336 10.111 25.77 10.111 Z M 10.231 10.111 C 11.666 10.111 12.829 11.301 12.829 12.77 C 12.829 14.238 11.666 15.429 10.231 15.429 C 8.798 15.429 7.636 14.238 7.636 12.77 C 7.636 11.301 8.798 10.111 10.231 10.111 Z M 18.207 7.574 C 19.99 7.574 21.436 9.053 21.436 10.878 C 21.436 12.704 19.99 14.184 18.207 14.184 C 16.422 14.184 14.976 12.704 14.976 10.878 C 14.976 9.053 16.422 7.574 18.207 7.574 Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
                 <p class="article__section__description">
-                    Um retrato arrebatador dos conservacionistas Kris e Doug Tompkins mostrando sua luta para preservar um dos últimos lugares verdadeiramente selvagens da Terra.
+                    Um retrato arrebatador dos conservacionistas Kris e Doug Tompkins mostrando sua luta para preservar
+                    um dos últimos lugares verdadeiramente selvagens da Terra.
                 </p>
             </div>
 
-        <div class="tabs-display">
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__list__item navigation__list__item--active">
-                        <button data-tab-button="suggestions" type="button">Sugestões</button>
-                    </li>
-                    <li class="navigation__list__item">
-                        <button data-tab-button="extras" type="button">Extras</button>
-                    </li>
-                    <li class="navigation__list__item">
-                        <button data-tab-button="details" type="button">Detalhes</button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div data-tab-id="suggestions" class="suggestions "> 
-            <h3 class="tabs-title">Sugestões</h3>
-            <div id ="suggestions__carousel">
-                <img class="suggestions__carousel__image" src="./dist/images/Suggestions/The-Territory-logo-1.webp" alt="Capa do documentário O território">
-                <img class="suggestions__carousel__image" src="./dist/images/Suggestions/okavango.jpeg" alt="Capa do documentário Okavango">
-                <img class="suggestions__carousel__image" src="./dist/images/Suggestions/Vulcoes-A-Tragedia-de-Katia-e-Maurice-Krafft-Disney-Plus.jpg" alt="Capa do documentário Vulcões">
-                <img src="./dist/images/Suggestions/costeau.jpg" alt="Capa do documentário Become Cousteau" class="suggestions__carousel__image">
-                <img src="./dist/images/Suggestions/The Rescue.jpg" alt="Capa do documentário O resgate" class="suggestions__carousel__image">
-                <img src="./dist/images/Suggestions/freeSolo.jpg" alt="Capa do documentário Free Solo" class="suggestions__carousel__image">
-                <img src="./dist/images/Suggestions/cozinhas.jpg" alt="Capa do documentário Cozinhas de Emergência" class="suggestions__carousel__image">
-                <img src="./dist/images/Suggestions/O-Segredo-das-Baleias-Disney-Plus.jpg" alt="Capa do documentário O segredo das baleias" class="suggestions__carousel__image">
-            </div>
-        </div>
-
-        <div data-tab-id="extras" class="extras tab">
-            <h3 class="tabs-title">Extras</h3>
-            <div class="extras__item">
-                <img class="extras__item__trailer" src="./dist/images/wildlife/trailer Wild.jpg" alt="Trailer do documentário Wild Life da NatGeo">
-                <p class="extras__item__title">Trailer| Missão para Salvar o Mundo (3min)</p>
-                <p class="extras__item__description">Veja o trailer.</p>
-            </div>
-        </div>
-
-        <div data-tab-id="details" class="details tab">
-            <h3 class="tabs-title">Detalhes</h3>
-            <div class="details__description">
-                <p class="details__description__title">Wild Life</p>
-                <p class="details__description__sinopse">
-                    Dos cineastas ganhadores do Oscar Chai Vasarhelyi e Jimmy Chin, “Missão para Salvar o Mundo” narra a história de Kris e Doug Tompkins, que deixaram para trás o mundo bem-sucedido das marcas de atividades outdoor que criaram – Patagonia, The North Face e Esprit – e concentraram-se em um esforço visionário para criar parques nacionais pelo Chile e Argentina.
-                </p>
-            </div>
-
-            <div class="details__data">
-                <ul>
-                    <li class="details__data__subtitle">Duração:</li>
-                    <li class="details__data__info">1h 32min</li>
-                    <li class="details__data__subtitle">Data de lançamento:</li>
-                    <li class="details__data__info">2023</li>
-                    <li class="details__data__subtitle">Gênero:</li>
-                    <li class="details__data__info">Documentário</li>
-                    <li class="details__data__subtitle">Classificação</li>
-                    <li class="details__data__info"><img class="details__data__info__age-tag" src="./dist/images/tag-12.png" alt="Classificação etária: 12 anos"></li>
-                    <li class="details__data__subtitle">Drogas ilícitas</li>
-                    <li class="details__data__info">Violência</li>
-                </ul>
-                
-                <div>
-                    <ul>
-                        <li class="details__data__subtitle">Direção:</li>
-                        <li class="details__info">Elizabeth Chai Vasarhelyi,  Jimmy Chin</li>
+            <div class="tabs-display">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__list__item navigation__list__item--active">
+                            <button data-tab-button="suggestions" type="button">Sugestões</button>
+                        </li>
+                        <li class="navigation__list__item">
+                            <button data-tab-button="extras" type="button">Extras</button>
+                        </li>
+                        <li class="navigation__list__item">
+                            <button data-tab-button="details" type="button">Detalhes</button>
+                        </li>
                     </ul>
-                    <ul>
-                        <li class="details__data__subtitle">Elenco:</li>
-                        <li class="details__info">Kristine Tompkins</li>
-                        <li class="details__info">Rick Ridgeway</li>
-                        <li class="details__info">Jimmy Chin</li>
-                        <li class="details__info">Claudio Alvarado</li>
-                        <li class="details__info">Michelle Bachelet</li>
-                        <li class="details__info">Dago Guzman</li>
-                    </ul>
+                </nav>
+            </div>
+
+            <div data-tab-id="suggestions" class="suggestions ">
+                <h3 class="tabs-title">Sugestões</h3>
+                <div id="suggestions__carousel">
+                    <img class="suggestions__carousel__image" src="./dist/images/Suggestions/The-Territory-logo-1.webp"
+                        alt="Capa do documentário O território">
+                    <img class="suggestions__carousel__image" src="./dist/images/Suggestions/okavango.jpeg"
+                        alt="Capa do documentário Okavango">
+                    <img class="suggestions__carousel__image"
+                        src="./dist/images/Suggestions/Vulcoes-A-Tragedia-de-Katia-e-Maurice-Krafft-Disney-Plus.jpg"
+                        alt="Capa do documentário Vulcões">
+                    <img src="./dist/images/Suggestions/costeau.jpg" alt="Capa do documentário Become Cousteau"
+                        class="suggestions__carousel__image">
+                    <img src="./dist/images/Suggestions/The Rescue.jpg" alt="Capa do documentário O resgate"
+                        class="suggestions__carousel__image">
+                    <img src="./dist/images/Suggestions/freeSolo.jpg" alt="Capa do documentário Free Solo"
+                        class="suggestions__carousel__image">
+                    <img src="./dist/images/Suggestions/cozinhas.jpg" alt="Capa do documentário Cozinhas de Emergência"
+                        class="suggestions__carousel__image">
+                    <img src="./dist/images/Suggestions/O-Segredo-das-Baleias-Disney-Plus.jpg"
+                        alt="Capa do documentário O segredo das baleias" class="suggestions__carousel__image">
                 </div>
             </div>
-        </div>
+
+            <div data-tab-id="extras" class="extras tab">
+                <h3 class="tabs-title">Extras</h3>
+                <div class="extras__item">
+                    <img class="extras__item__trailer" src="./dist/images/wildlife/trailer Wild.jpg"
+                        alt="Trailer do documentário Wild Life da NatGeo">
+                    <p class="extras__item__title">Trailer| Missão para Salvar o Mundo (3min)</p>
+                    <p class="extras__item__description">Veja o trailer.</p>
+                </div>
+            </div>
+
+            <div data-tab-id="details" class="details tab">
+                <h3 class="tabs-title">Detalhes</h3>
+                <div class="details__description">
+                    <p class="details__description__title">Wild Life</p>
+                    <p class="details__description__sinopse">
+                        Dos cineastas ganhadores do Oscar Chai Vasarhelyi e Jimmy Chin, “Missão para Salvar o Mundo”
+                        narra a história de Kris e Doug Tompkins, que deixaram para trás o mundo bem-sucedido das marcas
+                        de atividades outdoor que criaram – Patagonia, The North Face e Esprit – e concentraram-se em um
+                        esforço visionário para criar parques nacionais pelo Chile e Argentina.
+                    </p>
+                </div>
+
+                <div class="details__data">
+                    <ul>
+                        <li class="details__data__subtitle">Duração:</li>
+                        <li class="details__data__info">1h 32min</li>
+                        <li class="details__data__subtitle">Data de lançamento:</li>
+                        <li class="details__data__info">2023</li>
+                        <li class="details__data__subtitle">Gênero:</li>
+                        <li class="details__data__info">Documentário</li>
+                        <li class="details__data__subtitle">Classificação</li>
+                        <li class="details__data__info"><img class="details__data__info__age-tag"
+                                src="./dist/images/tag-12.png" alt="Classificação etária: 12 anos"></li>
+                        <li class="details__data__subtitle">Drogas ilícitas</li>
+                        <li class="details__data__info">Violência</li>
+                    </ul>
+
+                    <div>
+                        <ul>
+                            <li class="details__data__subtitle">Direção:</li>
+                            <li class="details__info">Elizabeth Chai Vasarhelyi, Jimmy Chin</li>
+                        </ul>
+                        <ul>
+                            <li class="details__data__subtitle">Elenco:</li>
+                            <li class="details__info">Kristine Tompkins</li>
+                            <li class="details__info">Rick Ridgeway</li>
+                            <li class="details__info">Jimmy Chin</li>
+                            <li class="details__info">Claudio Alvarado</li>
+                            <li class="details__info">Michelle Bachelet</li>
+                            <li class="details__info">Dago Guzman</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
     </main>
 
     <footer class="footer">
         <img class="footer__logo" src="./dist/images/Logo/disneyplus.svg" alt="Disney Plus">
-            <ul class="footer__list">
-                <li class="footer__list__item">
-                    <p>Política de Privacidade</p>
-                </li>
-                <li class="footer__list__item">
-                    <p>Proteção de Dados no Brasil</p>
-                </li>
-                <li class="footer__list__item">
-                    <p>Contrato de Assinatura</p>
-                </li>
-                <li class="footer__list__item">
-                    <p>Ajuda</p>
-                </li>
-                <li class="footer__list__item">
-                    <p>Dispositivos compatíveis</p>
-                </li>
-                <li class="footer__list__item">
-                    <p>Sobre o Disney+</p>
-                </li>
-                <li class="footer__list__item">
-                    <p>Anúncios personalizados</p>
-                </li>
-            </ul>
-        <p class="footer__message">Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20</p>
+        <ul class="footer__list">
+            <li class="footer__list__item">
+                <p>Política de Privacidade</p>
+            </li>
+            <li class="footer__list__item">
+                <p>Proteção de Dados no Brasil</p>
+            </li>
+            <li class="footer__list__item">
+                <p>Contrato de Assinatura</p>
+            </li>
+            <li class="footer__list__item">
+                <p>Ajuda</p>
+            </li>
+            <li class="footer__list__item">
+                <p>Dispositivos compatíveis</p>
+            </li>
+            <li class="footer__list__item">
+                <p>Sobre o Disney+</p>
+            </li>
+            <li class="footer__list__item">
+                <p>Anúncios personalizados</p>
+            </li>
+        </ul>
+        <p class="footer__message">Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O
+            serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das
+            Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M
+            73.042.962/0004-20</p>
         <p class="footer__disney-rights">© Disney. Todos os direitos reservados.</p>
     </footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script  type="text/javascript" src="./dist/scripts/main.js"></script>
+    <script type="text/javascript" src="./dist/scripts/main.js"></script>
 
 </body>
+
 </html>
